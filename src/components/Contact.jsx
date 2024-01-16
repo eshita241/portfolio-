@@ -8,7 +8,7 @@ export default function Contact() {
     <div className='h-full bg-black'>
         <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
             <div className='flex flex-col w-full max-w-[700px]'>
-                <h2 className='h2 text-center text-white text-5xl font-bold mb-12'>
+                <h2 className='h2 text-center text-white text-5xl font-extrabold mb-12'>
                     Say Hello!
                 </h2>
                 <form className='flex-1 flex flex-col gap-6 w-full mx-auto'>

@@ -6,6 +6,7 @@ import SocialLinks from "./components/SocialLink";
 import Contact from "./components/Contact";
 import HeroSection from "./components/about";
 import ProjectSection from "./components/ProjectSection";
+import Organizations from "./components/Organizations";
 
 
 
@@ -27,11 +28,16 @@ function App() {
           </div>
           <div>
           <SectionDivider/>
+          <Organizations/>
+          </div>
+          <div>
+          <SectionDivider/>
           <ProjectSection/>
           </div>
           <div></div>
           <SectionDivider/>
           <Contact/>
+          <p className="bottom-0 mb-4 text-white text-center"> Made with love by Eshita</p>
       </main>
   </>
   );
