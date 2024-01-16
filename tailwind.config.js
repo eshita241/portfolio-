@@ -19,7 +19,8 @@ module.exports = {
     extend: {
       space: {
         '5px': '5px',
-      }
+      },
+      grayscale: ['hover', 'focus'],
     },
   },
   plugins: [],

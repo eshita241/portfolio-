@@ -29,6 +29,7 @@ function App() {
           <SectionDivider/>
           <ProjectSection/>
           </div>
+          <div></div>
           <SectionDivider/>
           <Contact/>
       </main>

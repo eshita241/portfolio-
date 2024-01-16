@@ -1,8 +1,8 @@
 // HeroSection.js
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TabButton from './TabButton';
-import { GoArrowRight } from "react-icons/go";
+import { TiArrowForward } from "react-icons/ti";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 
@@ -12,24 +12,24 @@ const data = [
     id: "skills",
     content: (
       <ul className='max-w-[265px] text-sm grid grid-cols-2 text-white '>
-        <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight /></span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+        <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward /></span> abcd</li>
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><GoArrowRight />
+          <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
           </span> abcd</li>
 
       </ul>
@@ -56,16 +56,25 @@ const data = [
 ];
 
 const HeroSection = () => {
-  const [tab, setTab] = useState(""); // State to manage the active tab
+  const [tab, setTab] = useState("skills"); // State to manage the active tab
+  const [animationComplete] = useState(false);
 
   const handleTabChange = (selectedTab) => {
-    // If the selected tab is already open, close it
-    if (tab === selectedTab) {
-      setTab("");
-    } else {
-      setTab(selectedTab);
+    // If the selected tab is already open and there's only one section open, don't close it
+    if (tab === selectedTab && data.filter(item => tab === item.id).length === 1) {
+      return;
     }
+
+    // Toggle the selected tab
+    setTab((prevTab) => (prevTab === selectedTab ? "" : selectedTab));
   };
+
+  useEffect(() => {
+    // Open the "Skills" section when the animation is complete
+    if (animationComplete) {
+      setTab("skills");
+    }
+  }, [animationComplete]);
 
   return (
     <section className='mx-auto px-12 py-4'>
@@ -77,7 +86,7 @@ const HeroSection = () => {
             <img
               src="/images/my_imagee.jpg"
               alt="my image"
-              className='absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+              className='absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:opacity-25 '
               width={300}
               height={300}
             ></img>
