@@ -3,7 +3,6 @@ import './App.css';
 import Header from "./components/header";
 import SectionDivider from "./components/section-divider";
 import SocialLinks from "./components/SocialLink";
-import Experi from "./components/experience";
 import Contact from "./components/Contact";
 import HeroSection from "./components/about";
 import ProjectSection from "./components/ProjectSection";
@@ -30,6 +29,7 @@ function App() {
           <SectionDivider/>
           <ProjectSection/>
           </div>
+          <SectionDivider/>
           <Contact/>
       </main>
   </>

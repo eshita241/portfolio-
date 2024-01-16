@@ -10,7 +10,7 @@ export default function Header(){
         initial={{y:-100, opacity:0}}
         animate= {{y:0, opacity:1
         }}>
-            <img src={logo} href="/home" alt="logo" className=" h-0 fixed sm:bottom-[0.15rem] sm:right-[1.2rem] sm:h-28 cursor-pointer"></img>
+            <img src={logo} href="/home" alt="logo" className=" h-0 fixed sm:bottom-[1.5rem] sm:right-[2.5rem] sm:h-10 cursor-pointer"></img>
         </motion.div>
         <motion.div className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none bg-grey bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[32.5rem] sm:rounded-full"
         initial={{y:-100, x:"-50%", opacity:0}}
