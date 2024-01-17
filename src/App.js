@@ -10,6 +10,7 @@ import Organizations from "./components/Organizations";
 
 
 
+
 function App() {
   return (
       <><main className="w-full h-screen bg-black overflow-x-hidden ">
@@ -18,7 +19,7 @@ function App() {
             <div className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
             <SocialLinks/>
             </div>
-            <div className="h-[88vh] mx-auto p-4">
+            <div className="mx-auto p-4">
               <Intro/>
             </div>
           </div>
@@ -37,7 +38,7 @@ function App() {
           <div></div>
           <SectionDivider/>
           <Contact/>
-          <p className="bottom-0 mb-4 text-white text-center"> Made with love by Eshita</p>
+          <p className="bottom-0 mb-4 text-white text-center flex justify-center items-center flex-row"> Made with <img src="/images/shape.png" width={27} className=""></img> by Eshita</p>
       </main>
   </>
   );

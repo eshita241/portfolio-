@@ -1,6 +1,6 @@
 // HeroSection.js
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import TabButton from './TabButton';
 import { TiArrowForward } from "react-icons/ti";
 import { TypeAnimation } from 'react-type-animation';
@@ -40,7 +40,7 @@ const data = [
     id: "education",
     content: (
       <div>
-        <p className='text-white'>Educational details go here.</p>
+        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
       </div>
     ),
   },
@@ -49,7 +49,7 @@ const data = [
     id: "certification",
     content: (
       <div>
-        <p className='text-white'>cdctfueti</p>
+        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
       </div>
     ),
   },
@@ -69,12 +69,7 @@ const HeroSection = () => {
     setTab((prevTab) => (prevTab === selectedTab ? "" : selectedTab));
   };
 
-  useEffect(() => {
-    // Open the "Skills" section when the animation is complete
-    if (animationComplete) {
-      setTab("skills");
-    }
-  }, [animationComplete]);
+  
 
   return (
     <section className='mx-auto px-12 py-4'>
@@ -84,11 +79,10 @@ const HeroSection = () => {
       <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
           <div className='rounded-full bg-grey w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative border-4 border-green '>
             <img
-              src="/images/my_imagee.jpg"
+              src="/images/my_image.jpg"
               alt="my image"
-              className='absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:opacity-25 '
-              width={300}
-              height={300}
+              className='absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hover:opacity-25  '
+              width={275}
             ></img>
           </div>
         </div>
