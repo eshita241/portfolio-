@@ -31,8 +31,8 @@ const Organizations = () => {
 
   return (
     <section id="experience" className='flex justify-center items-center flex-col py-20'>
-      <h2 className='text-white sm:mb-[1rem] text-4xl sm:text-5xl lg:text-6xl font-extrabold'>Organizations</h2>
-      <h5 className='text-white opacity-45 mb-4 sm:mb-4 text-xl sm:text-2xl lg:text-4xl font-bold'>Volunteer Experience</h5>
+      <h2 className='text-white sm:mb-[1.4rem] text-4xl sm:text-5xl lg:text-6xl font-bold'>Organizations</h2>
+      
       <div className='text-white flex flex-row justify-center items-center gap-10 py-6 '>
         {Experience.map((item) => (
           <TabButton key={item.id} selectTab={() => handleTabChange(item.id)} active={tab === item.id} className="border-2 px-7 py-3 bg-opacity-5 border-green bg-green rounded-full font:medium hover:bg-opacity-20">

@@ -5,7 +5,7 @@ const OrganizationsCard = ({ imgUrl, title, description, gitUrl }) => {
   return (
     <div className='flex flex-col md:flex-row bg-[#181818] rounded-xl bg-opacity-45 overflow-hidden'>
       <div className='md:w-1/2 text-white rounded-b-xl p-6 md:p-8 '>
-        <h5 className='font-xl font-semibold mb-4'>{title}</h5>
+        <h5 className='font-xl font-semibold mb-4'>{title}: <span className='text-white opacity-55'>Volunteer Experience</span></h5>
         <p className='text-green'>{description}</p>
       </div>
       <div className='md:w-1/2 relative group h-52 md:h-60 bg-cover' style={{ background: `url(${imgUrl})`, backgroundSize:"contain" }}>

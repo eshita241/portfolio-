@@ -5,7 +5,6 @@ import TabButton from './TabButton';
 import { TiArrowForward } from "react-icons/ti";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
-import { Element } from 'react-scroll';
 
 const data = [
   {
@@ -56,7 +55,7 @@ const data = [
   },
 ];
 
-const HeroSection = () => {
+const About = () => {
   const [tab, setTab] = useState("skills"); // State to manage the active tab
   const [animationComplete] = useState(false);
 
@@ -88,7 +87,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className='mt-4 md:mt-0 flex flex-col h-full col-span-7 place-self-center text-center sm:text-left mx-auto px-20 py-4'>
-          <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>About Me </h1>
+          <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-bold'>About Me </h1>
           <TypeAnimation className='text-white text-base lg:text-lg'
       sequence={[
         'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum minima voluptatem nam tempora excepturi. Accusantium nobis est quisquam commodi animi a aspernatur asperiores eligendi ex vel totam nostrum voluptatem, incidunt suscipit quos ipsum, tempora sunt soluta non voluptatibus ullam consequuntur illum consequatur? Alias vero quia, sapiente temporibus perferendis officiis quas.',
@@ -119,4 +118,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default About;
