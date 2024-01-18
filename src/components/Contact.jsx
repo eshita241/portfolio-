@@ -5,8 +5,8 @@ import { FaMedium } from "react-icons/fa6";
 
 export default function Contact() {
   return (
-    <div className='h-full bg-black'>
-        <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
+    <div  id ="contact" className='h-full bg-black'>
+        <div className='container mx-auto text-center xl:text-left flex items-center justify-center h-full'>
             <div className='flex flex-col w-full max-w-[700px]'>
                 <h2 className='h2 text-center text-white text-5xl font-extrabold mb-12'>
                     Say Hello!

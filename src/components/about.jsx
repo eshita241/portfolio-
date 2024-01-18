@@ -5,6 +5,7 @@ import TabButton from './TabButton';
 import { TiArrowForward } from "react-icons/ti";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
+import { Element } from 'react-scroll';
 
 const data = [
   {
@@ -72,7 +73,7 @@ const HeroSection = () => {
   
 
   return (
-    <section className='mx-auto px-12 py-4'>
+    <section className='mx-auto px-12 py-20' id="about">
       <div className='grid grid-cols-1 sm:grid-cols-12' initial={{opacity:0, scale:0}}
       animate={{ opacity: 1, scale:1}}
       transition={{delay: 1}}>

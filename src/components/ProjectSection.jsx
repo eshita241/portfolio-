@@ -48,7 +48,7 @@ const ProjectSection = () => {
 
     ]
   return (
-    <><section className='flex justify-center items-center flex-col'>
+    <><section id="projects" className='flex justify-center items-center flex-col py-20'>
         <h2 className='text-white mb-4 sm:mb-14 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>My Projects</h2>
     <div className='grid grid-cols-3 px-48 gap-8 md:gap-12'>
         {

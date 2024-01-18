@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { FaMedium } from "react-icons/fa6";
 import { IoDocumentTextOutline } from "react-icons/io5";
-
+import { Element } from 'react-scroll';
 
 export default function Intro() {
   return (
-    <section id="#home">
+    <Element name="intro">
     <div className="flex flex-col  items-center justify-center" >
         <motion.div  initial={{y:100, opacity:0}}
     animate= {{y:0, opacity:1}}
@@ -26,6 +26,6 @@ export default function Intro() {
           </motion.div>
         
     </div>
-    </section>
+    </Element>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import OrganizationsCard from './OrganizationsCard';
 import TabButton from './TabButton';
+import { Element } from 'react-scroll';
 
 const Experience = [
   {
@@ -29,7 +30,7 @@ const Organizations = () => {
   };
 
   return (
-    <section id="experience" className='flex justify-center items-center flex-col '>
+    <section id="experience" className='flex justify-center items-center flex-col py-20'>
       <h2 className='text-white sm:mb-[1rem] text-4xl sm:text-5xl lg:text-6xl font-extrabold'>Organizations</h2>
       <h5 className='text-white opacity-45 mb-4 sm:mb-4 text-xl sm:text-2xl lg:text-4xl font-bold'>Volunteer Experience</h5>
       <div className='text-white flex flex-row justify-center items-center gap-10 py-6 '>
