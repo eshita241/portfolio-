@@ -4,7 +4,7 @@ import Header from "./components/header";
 import SectionDivider from "./components/section-divider";
 import SocialLinks from "./components/SocialLink";
 import Contact from "./components/Contact";
-import About from "./components/About";
+import About from "./components/about";
 import ProjectSection from "./components/ProjectSection";
 import Organizations from "./components/Organizations";
 
@@ -34,9 +34,10 @@ function App() {
           <SectionDivider/>
           <ProjectSection/>
           </div>
-          <div></div>
+          <div>
           <SectionDivider/>
           <Contact/>
+          </div>
           <p className="bottom-0 mb-4 text-white text-center flex justify-center items-center flex-row"> Made with <img src="/images/shape.png" width={27} alt="heart"></img> by Eshita</p>
       </main>
   </>
