@@ -14,9 +14,9 @@ const Header = () => {
         >
             <img src={logo} href="#home" alt="logo" className=" h-0 fixed sm:bottom-[1.5rem] sm:right-[2.5rem] sm:h-10 cursor-pointer"></img>
         </motion.div>
-<nav className=" flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 sm:top-[1.7rem]  sm:h-[initial] sm:py-0 ">
-<ul className='flex justify-center items-center gap-9 '>
-        <li className='text-white cursor-pointer flex justify-center items-center'><a href="#home" >
+        <nav className=" flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 -translate-y-2 sm:top-[1.7rem]  sm:h-[initial] py-0 ">
+          <ul className='flex justify-center items-center gap-9 border-white border-[1.2px] px-10 py-3  bg-grey bg-opacity-50 rounded-full border-opacity-25 '>
+            <li className='text-white cursor-pointer flex justify-center items-center'><a href="#home" >
             Home
             </a> 
             </li>

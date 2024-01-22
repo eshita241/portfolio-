@@ -11,26 +11,26 @@ const data = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className='max-w-[265px] text-sm grid grid-cols-2 text-white '>
-        <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward /></span> abcd</li>
+      <ul className='max-w-[265px] text-sm grid grid-cols-2 font-serif text-white '>
+        <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward /></span> React</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> Python</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> Next.js</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> React Native</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> C</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> C++</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> Java</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> Javascript</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> Tailwind CSS</li>
           <li className='flex items-center gap-[0.45rem] text-[1rem]'><span className='text-green text-xl'><TiArrowForward />
-          </span> abcd</li>
+          </span> SQL</li>
 
       </ul>
     ),
@@ -40,7 +40,7 @@ const data = [
     id: "education",
     content: (
       <div>
-        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
+        <p className='text-white font-serif'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
       </div>
     ),
   },
@@ -49,7 +49,7 @@ const data = [
     id: "certification",
     content: (
       <div>
-        <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
+        <p className='text-white font-mono'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
       </div>
     ),
   },
@@ -57,7 +57,7 @@ const data = [
 
 const About = () => {
   const [tab, setTab] = useState("skills"); // State to manage the active tab
-  const [animationComplete] = useState(false);
+ 
 
   const handleTabChange = (selectedTab) => {
     // If the selected tab is already open and there's only one section open, don't close it
@@ -87,17 +87,17 @@ const About = () => {
           </div>
         </div>
         <div className='mt-4 md:mt-0 flex flex-col h-full col-span-7 place-self-center text-center sm:text-left mx-auto px-20 py-4'>
-          <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-bold'>About Me </h1>
-          <TypeAnimation className='text-white text-base lg:text-lg'
-      sequence={[
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum minima voluptatem nam tempora excepturi. Accusantium nobis est quisquam commodi animi a aspernatur asperiores eligendi ex vel totam nostrum voluptatem, incidunt suscipit quos ipsum, tempora sunt soluta non voluptatibus ullam consequuntur illum consequatur? Alias vero quia, sapiente temporibus perferendis officiis quas.',
+          <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-bold font-serif'>About Me </h1>
+          <TypeAnimation className='text-white text-base font-mono lg:text-lg'
+      sequence={[ 
+        'Eshita Chokhani here, currently studying Information Technology at Vellore Institute of Technology. My world revolves around problem-solving, with a keen focus on web development and machine learning. Fun fact: I can dance on skates! Beyond the tech realm, I find joy in exploring the elegance of mathematics and am always eager to learn new things. Additionally, I have a flair for designing applications and value effective collaboration. Excited about the dynamic field of technology, I am committed to continuous learning in my sophomore year.',
         1000,
       ]}
       wrapper="span"
       speed={85}
       repeat={Infinity}
     />
-          <div className="flex flex-row mt-8">
+          <div className="flex font-serif flex-row mt-8">
             {data.map((item) => (
               <TabButton key={item.id} selectTab={() => handleTabChange(item.id)} active={tab === item.id}>
                 {item.title}

@@ -19,8 +19,13 @@ export default function Home() {
           <p className='text-center px-[1.9rem] lg:px-[26rem] md:px-[9rem] sm:px-[10rem] flex flex-wrap items-center justify-center py-5 text-text2 opacity-65'>I am a student studying Information Technology, interested in learning new things and discovering my potential, quis fugiat doloribus aperiam!</p>
           
           <div className='flex justify-center items-center gap-8 py-5'>
-          <button className="bg-green justify-center font-medium rounded-full text-white px-7 py-3 flex items-center bg-opacity-5 border-2 border-green hover:bg-opacity-20 transition gap-2"><FaMedium />My blog </button>
-          <button className="bg-green justify-center font-medium rounded-full text-white px-7 py-3 flex items-center bg-opacity-5 border-2 border-green hover:bg-opacity-20 transition gap-2" download='true' href="/resume.pdf"><IoDocumentTextOutline />Resume</button>
+          <button className="bg-green justify-center font-medium rounded-full text-white px-7 py-4 flex items-center bg-opacity-5 border-2 border-green hover:bg-opacity-20 transition gap-2"><FaMedium/><a href="https://medium.com/@eshitachokhani" target="_blank">My blog</a></button>
+          <button className="bg-green justify-center font-medium rounded-full text-white px-7 py-4 flex items-center bg-opacity-5 border-2 border-green hover:bg-opacity-20 transition gap-2">
+  <IoDocumentTextOutline />
+  <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+    Resume
+  </a>
+</button>
           </div>
           
           </motion.div>
