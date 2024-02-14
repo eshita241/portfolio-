@@ -31,7 +31,7 @@ const ProjectSection = () => {
     ]
   return (
     <><section id="projects" className='flex justify-center items-center flex-col py-20'>
-        <h2 className='text-white mb-10 sm:mb-28 text-4xl sm:text-5xl lg:text-6xl font-bold mt-10 font-mono'>My Projects</h2>
+        <h2 className='text-white sm:mb-14 text-4xl sm:text-5xl lg:text-6xl font-bold mt-10 font-sans'>My Projects</h2>
     <div className='grid grid-cols-2 gap-24'>
         {
             ProjectsData.map((project) => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} gitUrl={project.gitUrl}/>)

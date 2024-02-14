@@ -7,14 +7,14 @@ const Experience = [
   {
     id: 1,
     title: "ACM-VIT",
-    description: "Implemented a robust library management system backend in GoLang with PostgreSQL. Developed distinct views for librarians and users, ensuring efficient book tracking and member management. Optimized database interactions for seamless performance. Functionalities which will track return due date.",
-    image: "/images/libMan.png",
+    description: "Proud ACM-VIT member, pivotal in Carpoolit app development. Orchestrated Gravitas 23 events, featuring the innovative Hybrid Cryptic Hunt 2.0 and Codex Cryptum. Passionate about merging technology and creativity to craft unforgettable experiences. Committed to advancing the intersection of innovation and human engagement.Dedicated to advancing technology and creativity for unforgettable, impactful experiences.",
+    image: "/images/acm.png",
   },
   {
     id: 2,
     title: "Vinnovate-IT",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste officiis autem, aliquam ipsum a culpa, architecto optio veniam deserunt nobis ut at provident repellendus voluptas repudiandae sit corrupti voluptatum reprehenderit temporibus qui hic. Porro, sapiente unde. Quibusdam excepturi praesentium in ipsam voluptatem perferendis, vero distinctio a ducimus quia dolorum reiciendis dignissimos ratione alias fuga facilis. Rerum consequatur eos consectetur perspiciatis fugit beatae quae impedit error veritatis quas ea a, vel amet officiis reprehenderit voluptatem inventore.",
-    image: "/images/Carpoolit.png"
+    description: "At VinnovateIT, I am a dedicated team member adeptly navigating the intersections of technology and management. Playing an integral role in the LinkedIn department, I actively craft impactful posts to enhance our online presence, foster collaboration, and share valuable insights. My commitment spans both technical and strategic dimensions, ensuring a comprehensive contribution to our organization's success.",
+    image: "/images/viit.png"
   }
 ];
 
@@ -31,7 +31,7 @@ const Organizations = () => {
 
   return (
     <section id="experience" className='flex justify-center items-center flex-col py-20'>
-      <h2 className='text-white sm:mb-[1.4rem] text-4xl sm:text-5xl lg:text-6xl font-bold mt-10 font-serif'>Organizations</h2>
+      <h2 className='text-white sm:mb-[1.4rem] text-4xl sm:text-5xl lg:text-6xl font-bold mt-10 font-sans'>Organizations</h2>
       
       <div className='text-white font-mono flex flex-row justify-center items-center gap-10 py-6 '>
         {Experience.map((item) => (
@@ -40,7 +40,7 @@ const Organizations = () => {
           </TabButton>
         ))}
       </div>
-      <div className='grid grid-cols-1 px-44 mt-11 gap-8 font-mono md:gap-12'>
+      <div className='grid grid-cols-1 px-72 mt-11 gap-8 font-mono md:gap-12'>
         {Experience.map((project) => (
           tab === project.id && (
             <OrganizationsCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} />
