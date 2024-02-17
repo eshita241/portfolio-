@@ -10,24 +10,24 @@ const data = [
     id: "skills",
     content: (
       <ul className='max-w-[320px] text-sm grid grid-cols-2 font-mono text-white '>
-        <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward /></span> React</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
+        <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward /></span> React</li>
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px] '><span className='text-green text-xl'><TiArrowForward />
           </span> Python</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
           </span> Next.js</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px] tracking-tight'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px] tracking-tight'><span className='text-green text-xl'><TiArrowForward />
           </span> React Native</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
           </span> C</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
           </span> C++</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
           </span> Java</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
           </span> Javascript</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px] tracking-tight'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px] tracking-tight'><span className='text-green text-xl'><TiArrowForward />
           </span> Tailwind CSS</li>
-          <li className='flex items-center gap-[0.45rem] text-[1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
+          <li className='flex items-center gap-[0.45rem] sm:text-[1.1rem] xsm:text-[14.5px]'><span className='text-green text-xl'><TiArrowForward />
           </span> SQL</li>
 
       </ul>
@@ -96,7 +96,7 @@ const About = () => {
       repeat={Infinity}
     />
     <br/>
-    <div className="mt-8 font-mono xsm:text-[14.9px]">
+    <div className="mt-8 font-mono xsm:text-[14.9px] sm:text-[16px] xsm:text-center">
     {data.map((item) => (
               <TabButton key={item.id} selectTab={() => handleTabChange(item.id)} active={tab === item.id}>
                 {item.title}
@@ -106,7 +106,7 @@ const About = () => {
   
             {data.map((item) => (
         tab === item.id && (
-          <div key={item.id} className='mt-4 xsm:text-xs'>
+          <div key={item.id} className='mt-4'>
             {item.content}
           </div>
         )

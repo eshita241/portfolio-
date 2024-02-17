@@ -31,14 +31,14 @@ export default function Contact() {
     <div id="contact" className='h-full bg-black py-24'>
       <div className='container mx-auto text-center xl:text-left flex items-center justify-center h-full'>
         <div className='flex flex-col w-full max-w-[700px]'>
-          <h2 className='h2 text-center text-white text-5xl font-bold mb-12 font-sans'>
+          <h2 className='h2 text-center text-white sm:text-5xl font-bold mb-12 font-sans'>
             Say Hello!
           </h2>
           <form className='flex-1 flex flex-col gap-6 w-full mx-auto' ref={form} onSubmit={handleSubmit}>
             <div className='flex gap-x-6 w-full '>
-              <input type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' className='input h-[3rem] w-[43.5rem] rounded-md px-3 border-2 border-green text-white bg-grey' />
+              <input type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' className='input xsm:w-[20rem] h-[3rem] sm:w-[43.5rem] rounded-md px-3 border-2 border-green text-white bg-grey' />
             </div>
-            <input type='text' name='subject' value={formData.subject} onChange={handleChange} placeholder='Subject' className='input h-[3.7rem] w-[43.5rem] rounded-md px-3 border-2 border-green text-white bg-grey' />
+            <input type='text' name='subject' value={formData.subject} onChange={handleChange} placeholder='Subject' className='input h-[3.7rem] w-[43.5rem] xsm:w-[30rem] rounded-md px-3 border-2 border-green text-white bg-grey' />
             <textarea name='message' value={formData.message} onChange={handleChange} placeholder='Message' className='textarea h-[7.7rem] w-[43.5rem] rounded-md px-3 pt-11 text-lg border-2 border-green text-white bg-grey'></textarea>
             <button type="submit" className='h-20'>
               <span className='border-2 bg-opacity-5  border-green hover:bg-opacity-20 transition bg-green text-white rounded-full px-10 py-4 font-semibold'>Get in Touch.</span>
