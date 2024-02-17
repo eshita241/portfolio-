@@ -15,7 +15,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl }) => {
           </a>
         </div>
       </div>
-      <div className='text-green rounded-b-md mt-2 border-2 border-white top-1/2 left-1/2 transform bg-[#181818] justify-center items-center py-10 w-[26rem] md:flex md:flex-row flex-wrap xsm:w-[15.6rem] '>
+      <div className='text-green rounded-b-md mt-2 border-2 border-white top-1/2 left-1/2 transform bg-[#181818] justify-center items-center py-10 sm:w-[26rem] md:flex md:flex-row flex-wrap xsm:w-[15.6rem] '>
         <h5 className='font-semibold text-xl xsm:text-[1rem] xsm:text-center'>{title}</h5>
       </div>
     </div>
