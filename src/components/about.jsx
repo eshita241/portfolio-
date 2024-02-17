@@ -70,7 +70,7 @@ const About = () => {
   
 
   return (
-    <section className='mx-auto px-12 py-20 xsm:px-3' id="about">
+    <section className='mx-auto sm:pr-24 py-20 xsm:px-3 ' id="about">
       <div className='grid grid-cols-1 sm:grid-cols-12' initial={{opacity:0, scale:0}}
       animate={{ opacity: 1, scale:1}}
       transition={{delay: 1}}>
