@@ -13,7 +13,7 @@ export default function Home() {
     transition={{
       delay: 0.6,
     }}>
-          <p className=" text-green font-medium text-lg flex items-center justify-center pt-[7.8rem] sm:leading-loose font-mono tracking-tighter">Hi, my name is</p>
+          <p className=" text-green font-medium text-lg flex items-center justify-center pt-[7.8rem] sm:leading-loose font-mono tracking-tighter xsm:mb-4 sm:mb-0">Hi, my name is</p>
           <h1 className="font-bold text-[2.6rem] sm:text-[3.8rem] text-white tracking-normal flex flex-wrap items-center justify-center font-sans xsm:text-center xsm:text-[1.86rem]">Eshita Chokhani.</h1>
           <h2 className='font-bold text-[2rem] leading-[4.8rem] sm:text-[3.4rem] sm:leading-[5.8rem]  text-text2 opacity-45 tracking-normal flex flex-wrap items-center justify-center font-sans xsm:text-2xl'>I like to explore things</h2>
           <p className='text-center px-[1.9rem] lg:px-[20rem] xl:px-[26rem] md:px-[9rem] sm:px-[10rem] flex flex-wrap items-center justify-center py-5 text-text2 opacity-65 font-mono xsm:px-[0.98rem] xsm:text-xs sm:text-sm'>I am a student studying Information Technology, interested in learning new things and discovering my potential, quis fugiat doloribus aperiam!</p>

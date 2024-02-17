@@ -96,7 +96,7 @@ const About = () => {
       repeat={Infinity}
     />
     <br/>
-    <div className="mt-8 font-mono xsm:text-[14.9px] sm:text-[16px] xsm:text-center">
+    <div className="mt-8 font-mono xsm:text-[14.9px] sm:text-[16px] xsm:pl-2">
     {data.map((item) => (
               <TabButton key={item.id} selectTab={() => handleTabChange(item.id)} active={tab === item.id}>
                 {item.title}
