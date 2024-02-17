@@ -6,7 +6,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl }) => {
   return (
     <div>
       <div
-        className={`h-48 md:h-56 w-[26rem] rounded-t-md relative group object-cover cursor-pointer`}
+        className={`xsm:h-[10rem] xsm:w-[15.6rem] sm:h-48 md:h-56 sm:w-[26rem] rounded-t-md relative group object-cover cursor-pointer`}
         style={{ background: `url(${imgUrl})`, backgroundSize: "contain" }}
       >
         <div className='overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-10 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500'>
@@ -15,8 +15,8 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl }) => {
           </a>
         </div>
       </div>
-      <div className='text-green rounded-b-md mt-2 border-2 border-white top-1/2 left-1/2 transform bg-[#181818] justify-center items-center py-10 w-[26rem] md:flex md:flex-row flex-wrap'>
-        <h5 className='font-semibold text-xl'>{title}</h5>
+      <div className='text-green rounded-b-md mt-2 border-2 border-white top-1/2 left-1/2 transform bg-[#181818] justify-center items-center py-10 w-[26rem] md:flex md:flex-row flex-wrap xsm:w-[15.6rem] '>
+        <h5 className='font-semibold text-xl xsm:text-[1rem] xsm:text-center'>{title}</h5>
       </div>
     </div>
   );

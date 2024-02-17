@@ -41,7 +41,7 @@ export default function Contact() {
             <input type='text' name='subject' value={formData.subject} onChange={handleChange} placeholder='Subject' className='input xsm:w-[20rem] h-[3.7rem] sm:w-[43.5rem] rounded-md px-3 border-2 border-green text-white bg-grey' />
             <textarea name='message' value={formData.message} onChange={handleChange} placeholder='Message' className='textarea xsm:w-[20rem] h-[7.7rem] sm:w-[43.5rem] rounded-md px-3 pt-11 text-lg border-2 border-green text-white bg-grey '></textarea>
             <button type="submit" className='h-20'>
-              <span className='border-2 bg-opacity-5  border-green hover:bg-opacity-20 transition bg-green text-white rounded-full px-10 py-4 font-semibold xsm:w-[rem] xsm:px-4 xsm:text-[10.5px] xsm:py-2'>Get in Touch</span>
+              <span className='border-2 bg-opacity-5  border-green hover:bg-opacity-20 transition bg-green text-white rounded-full px-10 py-4 font-semibold xsm:px-5 xsm:text-[12.9px] xsm:py-2'>Get in Touch</span>
             </button>
           </form>
           <div className="flex justify-center py-7 gap-4  text-white md:hidden">
