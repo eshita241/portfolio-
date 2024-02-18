@@ -24,7 +24,7 @@ const Organizations = () => {
 
   return (
     <section id="experience" className='flex justify-center items-center flex-col py-20 text-white'>
-      <h2 className='text-white sm:mb-[3.4rem] sm:text-5xl lg:text-6xl font-bold mt-10 font-sans'>Organizations</h2>
+      <h2 className='text-white sm:mb-[3.4rem] sm:text-5xl lg:text-6xl font-bold mt-10 font-sans xsm:text-4xl'>Organizations</h2>
             <VerticalTimeline>
               {Experience.map((project) => (
           (<React.Fragment key={project.id} title={project.title} description={project.description} icon={project.image} date={project.date}>
