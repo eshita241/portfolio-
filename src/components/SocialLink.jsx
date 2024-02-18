@@ -2,6 +2,7 @@ import { TbBrandGithub } from "react-icons/tb";
 import { FiLinkedin } from "react-icons/fi";
 import { motion } from "framer-motion";
 
+
 export default function SocialLinks() {
   return (
     <motion.div className="w-full h-full flex flex-col gap-6 text-white bottom-0" 

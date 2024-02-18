@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { motion } from "framer-motion";
 
 const ProjectSection = () => {
     const ProjectsData =[
@@ -36,11 +37,13 @@ const ProjectSection = () => {
   return (
     <><section id="projects" className='flex justify-center items-center flex-col py-20'>
         <h2 className='text-white xsm:mb-9 sm:mb-14 xsm:text-4xl sm:text-5xl lg:text-6xl font-bold mt-10 font-sans'>My Projects</h2>
-    <div className='sm:grid grid-cols-2 gap-7 xsm:flex xsm:flex-col'>
+    <motion.div initial={{x:'10%', opacity:0}}
+    animate= {{ x:'0%',opacity:1}}
+    transition={{delay:2}} className='sm:grid grid-cols-2 gap-7 xsm:flex xsm:flex-col'>
         {
             ProjectsData.map((project) => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} gitUrl={project.gitUrl} desc={project.description}/>)
         }
-    </div>
+    </motion.div>
         
     </section>
     
