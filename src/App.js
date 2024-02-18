@@ -12,7 +12,7 @@ import Organizations from "./components/Organizations";
 
 function App() {
   return (
-      <><main className="w-full h-screen bg-black overflow-x-hidden ">
+      <><main className="w-full h-screen bg-black overflow-x-hidden px-1">
     <Header />
           <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
             <div className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
@@ -22,20 +22,16 @@ function App() {
               <Home/>
             </div>
           </div>
-          <SectionDivider/>
           <div id="about">
             <About/>
           </div>
           <div>
-          <SectionDivider/>
           <Organizations/>
           </div>
           <div>
-          <SectionDivider/>
           <ProjectSection/>
           </div>
           <div>
-          <SectionDivider/>
           <Contact/>
           </div>
           <p className="bottom-0 mb-4 text-white text-center flex justify-center items-center flex-row"> Made with <img src="/images/shape.png" width={27} alt="heart"></img> by Eshita</p>
