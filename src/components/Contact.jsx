@@ -35,9 +35,7 @@ export default function Contact() {
             Say Hello!
           </h2>
           <form className='flex-1 flex flex-col gap-6 w-full mx-auto' ref={form} onSubmit={handleSubmit}>
-            <div className='flex gap-x-6 w-full '>
               <input type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' className='input xsm:w-[20rem] h-[3rem] sm:w-[43.5rem] rounded-md px-3 border-2 border-green text-white bg-grey ' />
-            </div>
             <input type='text' name='subject' value={formData.subject} onChange={handleChange} placeholder='Subject' className='input xsm:w-[20rem] h-[3.7rem] sm:w-[43.5rem] rounded-md px-3 border-2 border-green text-white bg-grey' />
             <textarea name='message' value={formData.message} onChange={handleChange} placeholder='Message' className='textarea xsm:w-[20rem] h-[7.7rem] sm:w-[43.5rem] rounded-md px-3 pt-11 text-lg border-2 border-green text-white bg-grey '></textarea>
             <button type="submit" className='h-20'>
