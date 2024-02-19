@@ -17,7 +17,7 @@ export default function SocialLinks() {
             <TbBrandGithub />
           </span>
         </a>
-        <a href="https://github.com" target="_blank" rel="noreferrer">
+        <a href="https://linkedin.com/in/eshita-chokhani-16098b24a" target="_blank" rel="noreferrer">
           <span className="w-10 h-10 text-xl bg-grey hover:bg-dark_green hover:bg-opacity-25 rounded-full inline-flex items-center justify-center hover:text-green cursor-pointer hover:-translate-y-4 transition-all duration-300">
           <FiLinkedin />
           </span>
