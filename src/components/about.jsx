@@ -38,16 +38,11 @@ const data = [
     id: "education",
     content: (
       <div>
-        <p className='text-white font-mono'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
-      </div>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certification",
-    content: (
-      <div>
-        <p className='text-white font-mono'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, beatae dicta veniam est ducimus laudantium ipsam! Soluta harum assumenda quo dolor, quae earum rem pariatur nulla, sit ratione amet excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia!rdrtxjycj.</p>
+        <h1 className='text-white font-mono font-bold'>Vellore Institute of Technology, Vellore, Tamil Nadu. </h1>
+        <p className=' text-light font-mono'>B.Tech in Information Technology. (2022-2026)</p>
+        <br/>
+        <h1 className='text-white font-mono font-bold'>Mahadevi Birla World Academy, Kolkata, West Bengal </h1>
+        <p className='text-light font-mono'>High School Diploma. (2008-2021)</p>
       </div>
     ),
   },

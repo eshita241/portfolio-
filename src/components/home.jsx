@@ -21,7 +21,7 @@ export default function Home() {
           <button className="xsm:w-[8rem] sm:w-[10rem] bg-green justify-center font-medium rounded-full text-white sm:px-7 sm:py-4 flex items-center bg-opacity-5 border-2 border-green hover:bg-opacity-20 transition sm:gap-2 font-mono tracking-tight xsm:px-3 xsm:text-[13.5px] xsm:py-3 xsm:gap-1 sm:text-[1rem]"><FaMedium/><a href="https://medium.com/@eshitachokhani" target="_blank">My blog</a></button>
           <button className="xsm:w-[8rem] sm:w-[10rem] bg-green justify-center font-medium rounded-full text-white sm:px-7 sm:py-4 flex items-center bg-opacity-5 border-2 border-green hover:bg-opacity-20 transition sm:gap-2 font-mono xsm:px-3 xsm:text-[13.5px] xsm:py-3 xsm:gap-1 sm:text-[1rem]">
   <IoDocumentTextOutline />
-  <a href="/assets/EshitaResume.pdf" target="_blank" rel="noopener noreferrer">
+  <a href="/assets/Resume-Eshita.pdf" target="_blank" rel="noopener noreferrer">
     Resume
   </a>
 </button>
