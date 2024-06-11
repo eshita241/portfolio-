@@ -10,6 +10,7 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
+    console.log("Hello")
     setIsNavOpen(!isNavOpen);
   };
 
@@ -22,33 +23,32 @@ const Header = () => {
         transition={{
             delay: 1}}
         >
-            <a href="#home"><img src={logo} alt="logo" className=" xsm:absolute sm:fixed sm:top-[90%] xsm:top-[1rem] xsm:left-5 xsm:h-7 sm:left-[95%] xxl:left-[97.3%] sm:h-10 cursor-pointer"></img></a>
-            <BiAlignRight className='absolute text-green xsm:top-[1rem] xsm:right-5 sm:hidden' size={30} onClick={toggleNav}/>
+            <a href="#home"><img src={logo} alt="logo" className=" xsm:hidden sm:flex sm:fixed sm:top-[90%] xsm:top-[1rem] sm:left-[92%] xxl:left-[97.3%] sm:h-10 cursor-pointer"></img></a>
         </motion.div>
-        <motion.nav className=" flex fixed left-1/2 sm:top-[1.7rem] sm:h-[initial] xsm:top-[1.3rem] py-0 xsm:h-20"
+        <motion.nav className="flex fixed left-1/2 sm:top-[1.7rem] sm:h-[initial] xsm:top-[1.3rem] py-0 xsm:h-20"
          initial={{ x:'-50%',y:'100%',opacity:0}}
          animate= {{x:'-50%', y:'0%',opacity:2}}
          transition={{
              delay: 1}}>
-          <ul className='sm:flex flex-wrap justify-center items-center w-[40rem] sm:gap-9 px-14 py-3 bg-white bg-opacity-45 rounded-full border-opacity-25 xsm:hidden'>
-            <li className='font-mono text-white font- cursor-pointer xsm:flex-wrap  hover:text-white hover:bg-opacity-30 hover:bg-text2 hover:rounded-full transition xsm:text-[15.4px]'><a href="#home" >
+          <ul className='flex justify-center items-center sm:gap-9 px-14 py-3 bg-white bg-opacity-45 rounded-full border-opacity-25 gap-10'>
+            <li className='font-mono text-white font- cursor-pointer xsm:flex-wrap hover:text-green transition xsm:text-[15.4px]'><a href="#home" >
             Home
             </a> 
             </li>
-            <li className='font-mono text-white cursor-pointer flex hover:text-white hover:bg-opacity-30 hover:bg-text2 hover:rounded-full transition xsm:text-[15.4px]'><a href="#about" >
+            <li className='font-mono text-white cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#about" >
             About
             </a> 
             </li>
-            <li className='text-white font-mono cursor-pointer flex hover:text-white hover:bg-opacity-30 hover:bg-text2 hover:rounded-full transition xsm:text-[15.4px]'><a href="#experience" >
+            <li className='text-white font-mono cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#experience" >
             Organizatons
             </a> 
             </li>
            
-            <li className='text-white font-mono cursor-pointer flex hover:text-white hover:bg-opacity-30 hover:bg-text2 hover:rounded-full transition xsm:text-[15.4px]'><a href="#projects" >
+            <li className='text-white font-mono cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#projects" >
             Projects
             </a> 
             </li>
-            <li className='text-white font-mono cursor-pointer flex hover:text-white hover:bg-opacity-30 hover:bg-text2 hover:rounded-full transition xsm:text-[15.4px]'><a href="#contact" >
+            <li className='text-white font-mono cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#contact" >
             Contact
             </a> 
             </li>

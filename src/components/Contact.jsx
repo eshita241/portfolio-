@@ -31,7 +31,7 @@ export default function Contact() {
     <div id="contact" className='h-full bg-black py-24'>
       <div className='container mx-auto text-center xl:text-left flex items-center justify-center h-full'>
         <div className='flex flex-col w-full max-w-[700px]'>
-          <h2 className='h2 xsm:text-4xl text-center text-white sm:text-5xl font-bold mb-12 font-sans'>
+          <h2 className='h2 xsm:text-4xl text-center text-white sm:text-5xl font-bold mb-12 z-[-10px] font-sans'>
             Say Hello!
           </h2>
           <form className='flex-1 flex flex-col gap-6 w-full mx-auto' ref={form} onSubmit={handleSubmit}>
