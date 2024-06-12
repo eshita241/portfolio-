@@ -2,10 +2,14 @@
 import React, {useState} from 'react';
 import { motion } from "framer-motion";
 import logo from "./logo.png";
-import { BiAlignRight } from "react-icons/bi";
-
 
 const Header = () => {
+  let Links =[ {name:"Home",link:"#home"},
+    {name:"About",link:"#about"},
+    {name:"Organizations",link:"#experience"},
+    {name:"Projects",link:"#projects"},
+    {name:"Contact",link:"#contact"},
+  ]
   const [tab, setTab] = useState("home");
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -25,34 +29,20 @@ const Header = () => {
         >
             <a href="#home"><img src={logo} alt="logo" className=" xsm:hidden sm:flex sm:fixed sm:top-[90%] xsm:top-[1rem] sm:left-[92%] xxl:left-[97.3%] sm:h-10 cursor-pointer"></img></a>
         </motion.div>
-        <motion.nav className="flex fixed left-1/2 sm:top-[1.7rem] sm:h-[initial] xsm:top-[1.3rem] py-0 xsm:h-20"
+        <motion.nav className="fixed top-0 left-1/2 w-full h-[4.5rem] rounded-none sm:top-[1.7rem] sm:h-[initial] sm:w-[36rem] py-0 backdrop-blur-[0.5rem] sm:rounded-full border border-text2 "
          initial={{ x:'-50%',y:'100%',opacity:0}}
          animate= {{x:'-50%', y:'0%',opacity:2}}
          transition={{
              delay: 1}}>
-          <ul className='flex justify-center items-center sm:gap-9 px-14 py-3 bg-white bg-opacity-45 rounded-full border-opacity-25 gap-10'>
-            <li className='font-mono text-white font- cursor-pointer xsm:flex-wrap hover:text-green transition xsm:text-[15.4px]'><a href="#home" >
-            Home
-            </a> 
-            </li>
-            <li className='font-mono text-white cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#about" >
-            About
-            </a> 
-            </li>
-            <li className='text-white font-mono cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#experience" >
-            Organizatons
-            </a> 
-            </li>
-           
-            <li className='text-white font-mono cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#projects" >
-            Projects
-            </a> 
-            </li>
-            <li className='text-white font-mono cursor-pointer flex hover:text-green transition xsm:text-[15.4px]'><a href="#contact" >
-            Contact
-            </a> 
-            </li>
-        </ul>
+          <ul className='flex justify-center items-center sm:gap-9 px-14 py-3 rounded-full border-opacity-25 gap-10 bg-light bg-opacity-25'>
+            {
+              Links.map((link) => (
+                <li key={link.name} className='font-mono text-white  font- cursor-pointer xsm:flex-wrap hover:text-green transition xsm:text-[15.4px]'>
+                  <a href={link.link}>{link.name}</a>
+                </li>
+              ))
+            }
+          </ul>
 </motion.nav>
         
     </section>
