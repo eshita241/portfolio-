@@ -29,21 +29,25 @@ const Header = () => {
         >
             <a href="#home"><img src={logo} alt="logo" className=" xsm:hidden sm:flex sm:fixed sm:top-[90%] xsm:top-[1rem] sm:left-[92%] xxl:left-[97.3%] sm:h-10 cursor-pointer"></img></a>
         </motion.div>
-        <motion.nav className="fixed top-0 left-1/2 w-full h-[4.5rem] rounded-none sm:top-[1.7rem] sm:h-[initial] sm:w-[36rem] py-0 backdrop-blur-[0.5rem] sm:rounded-full "
-         initial={{ x:'-50%',y:'100%',opacity:0}}
-         animate= {{x:'-50%', y:'0%',opacity:2}}
-         transition={{
-             delay: 1}}>
-          <ul className='flex rounded-none justify-center items-center sm:gap-9 px-14 py-3 sm:rounded-full border-opacity-25 gap-10 bg-light bg-opacity-25'>
+<motion.div className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none bg-grey bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[32.5rem] sm:rounded-full"
+        initial={{y:-100, x:"-50%", opacity:0}}
+        animate= {{y:0, x:"-50%", opacity:1}}>
+        </motion.div>
+        <motion.nav className=" flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 "
+        initial={{ x:'-50%',y:'100%',opacity:0}}
+        animate= {{x:'-50%', y:'0%',opacity:2}}
+        transition={{
+            delay: 1}}>
+            <ul className=" flex flex-wrap  w-[22rem] items-center justify-center gap-y-1 text-[0.9rem] font-medium text-text2 sm:w-[initial] sm:flex-nowrap sm:gap-5 cursor-pointer">
             {
               Links.map((link) => (
-                <li key={link.name} className='font-mono text-white  font- cursor-pointer xsm:flex-wrap hover:text-green transition xsm:text-[15.4px]'>
+                <motion.li key={link.name} className='font-mono h-3/4 flex  items-center justify-center px-3 py-3 hover:text-black hover:bg-text2 hover:rounded-full transition'>
                   <a href={link.link}>{link.name}</a>
-                </li>
+                </motion.li>
               ))
             }
-          </ul>
-</motion.nav>
+            </ul>
+        </motion.nav>
         
     </section>
   )
