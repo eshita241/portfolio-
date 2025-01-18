@@ -83,7 +83,7 @@ const About = () => {
           <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-bold font-sans xsm:text-center'>About Me </h1>
           <TypeAnimation className='text-white text-base font-mono lg:text-lg xsm:text-xs'
       sequence={[ 
-        'Eshita Chokhani here, currently studying Information Technology at Vellore Institute of Technology. My world revolves around problem-solving, with a keen focus on web development and machine learning. Fun fact: I can dance on skates! Beyond the tech realm, I find joy in exploring the elegance of mathematics and am always eager to learn new things. Additionally, I have a flair for designing applications and value effective collaboration. Excited about the dynamic field of technology, I am committed to continuous learning in my sophomore year.',
+        'Eshita Chokhani here, currently studying Information Technology at Vellore Institute of Technology. My world revolves around problem-solving, with a keen focus on web development and machine learning. Beyond the tech realm, I find joy in exploring the elegance of mathematics and integrating them in my applications. Additionally, I have a flair for designing applications and value effective collaboration. Excited about the dynamic field of technology, I am committed to continuous learning in my junior year. Fun fact: I can dance on skates!',
         1000,
       ]}
       wrapper="span"
