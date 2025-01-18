@@ -20,10 +20,10 @@ const ProjectSection = () => {
         },
         {
             id:4,
-            title:"Public Code Bases",
-            image:"/images/publicCodeBase.png",
-            description:'Design',
-            gitUrl:"https://www.figma.com/file/2ZEvzUaPciiWtQZoYu64XH/Concept-Crafters?type=design&node-id=1%3A32&mode=design&t=WM8KRPi7JBBBSqfb-1",
+            title:"MP3by4",
+            image:"/images/mp3by4.png",
+            description:'Chrome extension',
+            gitUrl:"https://github.com/eshita241/mp3by4",
         },
         {
             id:5,

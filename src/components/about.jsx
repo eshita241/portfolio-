@@ -49,16 +49,14 @@ const data = [
 ];
 
 const About = () => {
-  const [tab, setTab] = useState("skills"); // State to manage the active tab
+  const [tab, setTab] = useState("skills"); 
  
 
   const handleTabChange = (selectedTab) => {
-    // If the selected tab is already open and there's only one section open, don't close it
     if (tab === selectedTab && data.filter(item => tab === item.id).length === 1) {
       return;
     }
 
-    // Toggle the selected tab
     setTab((prevTab) => (prevTab === selectedTab ? "" : selectedTab));
   };
 
